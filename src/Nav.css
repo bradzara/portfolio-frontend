@@ -1,0 +1,34 @@
+.nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  /* Set a fixed width to ensure the hover effect doesn't shift other elements */
+  height: 50px;
+  overflow: hidden;
+  transition: width 0.3s;
+}
+
+.nav-item .nav-link span {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-item .nav-link i {
+  transition: opacity 0.3s;
+}
+
+.nav-item .nav-link:hover {
+  width: 100px;
+  /* Adjust width to accommodate the text */
+}
+
+.nav-item .nav-link:hover i {
+  opacity: 0;
+}
+
+.nav-item .nav-link:hover span {
+  opacity: 1;
+}
