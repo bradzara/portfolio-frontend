@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: url('jj-ying-WmnsGyaFnCQ-unsplash.jpg') rgba(0, 0, 0, 0.3);
+  background: url('/background.jpg') rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;

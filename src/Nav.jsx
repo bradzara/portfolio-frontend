@@ -10,9 +10,12 @@ export function Nav() {
 
   return (
     <header>
+      {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div className="container">
-          <a className="navbar-brand fs-4" href="#home">Bradley <span className='text-shadow: 0 0 25px'>Zara</span></a>
+        <div className="container-fluid">
+          {/* Logo */}
+          <a className="navbar-brand fs-4" href="#home">Brad Zara</a>
+          {/* Toggle button */}
           <button 
             className="navbar-toggler shadow-none border-0" 
             type="button" 
@@ -45,15 +48,15 @@ export function Nav() {
             </div>
 
             {/* Sidebar Body */}
-            <div className="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-              <ul className="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+            <div className="offcanvas-body">
+              <ul className="navbar-nav d-flex justify-content-sm-center align-items-center fs-5 flex-grow-1 pe-3">
                 <li className="nav-item">
                   <a 
                     className="nav-link active" 
                     aria-current="page" 
-                    href="#about"
+                    href="#home"
                   >
-                    <i className='bx bx-home h2'></i>
+                    <i className='bx bx-home h2 text-align'></i>
                     <span>Home</span>
                   </a>
                 </li>
