@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Nav.css'
 
 export function Nav() {
@@ -12,15 +12,17 @@ export function Nav() {
     <header>
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div className="container-fluid">
+        <div className="container-fluid d-flex flex-row-reverse">
+          
           {/* Logo */}
-          <a className="navbar-brand fs-4" href="#home">Brad Zara</a>
+          <a className="navbar-brand fs-4" href="#home">B.Z.</a>
+
           {/* Toggle button */}
           <button 
             className="navbar-toggler shadow-none border-0" 
             type="button" 
             data-bs-toggle="offcanvas" 
-            data-bs-target="#offcanvasNavbar" 
+            data-bs-target="offcanvasNavbar" 
             aria-controls="offcanvasNavbar" 
             aria-label="Toggle navigation"
             onClick={handleToggle}
@@ -30,14 +32,14 @@ export function Nav() {
 
           {/* Sidebar */}
           <div 
-            className="sidebar offcanvas offcanvas-start" 
+            className={`sidebar offcanvas offcanvas-start ${sidebarOpen ? 'show' : ''}`} 
             tabIndex="-1" 
             id="offcanvasNavbar" 
             aria-labelledby="offcanvasNavbarLabel"
           >
             {/* Sidebar Header */}
             <div className="offcanvas-header text-white border-bottom">
-              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">B.Z.</h5>
+              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Brad Zara</h5>
               <button 
                 type="button" 
                 className="btn-close btn-close-white shadow-none" 
@@ -63,7 +65,7 @@ export function Nav() {
                 <li className="nav-item mx-2">
                   <a 
                     className="nav-link" 
-                    href="#"
+                    href="#about"
                   >
                     <i className='bx bx-info-square h3'></i>
                     <span>About</span>

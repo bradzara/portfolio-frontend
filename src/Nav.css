@@ -1,5 +1,20 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.navbar-brand {
+  position: fixed;
+  left: 0;
+  margin-left: 20px;
+}
+
 .nav-item .nav-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 100px;
   height: 50px;
@@ -9,16 +24,16 @@
 
 .nav-item .nav-link span {
   position: absolute;
-  align-items: center;
-  justify-content: center;
+  left: 0;
+  right: 0;
+  text-align: center;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 .nav-item .nav-link i {
+  opacity: 1;
   transition: opacity 0.3s;
-  align-items: center;
-  justify-content: center;
 }
 
 .nav-item .nav-link:hover {
