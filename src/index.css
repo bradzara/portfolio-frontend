@@ -1,16 +1,42 @@
 html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
   scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --main-color: rgba(200, 26, 26, 0.826);
+}
+
 
 body {
   background: url('/background.jpg') rgba(0, 0, 0, 0.3);
+  background-attachment: fixed;
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
-@media(max-width: 991px) {
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+@media (max-width: 991px) {
   .sidebar {
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);

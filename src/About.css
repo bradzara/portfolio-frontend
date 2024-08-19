@@ -1,0 +1,8 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  color: white;
+  scroll-behavior: smooth;
+}
