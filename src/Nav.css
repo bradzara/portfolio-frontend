@@ -10,43 +10,35 @@
   margin-left: 20px;
 }
 
+
 .nav-item .nav-link {
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 100px;
+  justify-content: flex-start;
+  width: 150px;
   height: 50px;
-  transition: width 0.3s;
-}
-
-.nav-item .nav-link span {
-  position: absolute;
-  left: 0;
-  right: 0;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s;
+  padding: 0 1rem;
+  transition: background-color 0.3s;
+  text-decoration: none;
 }
 
 .nav-item .nav-link i {
-  opacity: 1;
-  transition: opacity 0.3s;
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-item .nav-link span {
+  font-size: 1.5rem;
 }
 
 .nav-item .nav-link:hover {
-  width: 100px;
-}
-
-.nav-item .nav-link:hover i {
-  opacity: 0;
-}
-
-.nav-item .nav-link:hover span {
-  opacity: 1;
+  color: var(--main-color);
 }
 
 .logo {
+  border-radius: 50%;
+  padding-top: 3rem;
   max-width: 125px;
   height: auto;
   cursor: pointer;
@@ -60,4 +52,28 @@
 .sidebar-logo {
   max-width: 50px;
   height: auto;
+}
+
+.navbar-toggler-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: invert(1) brightness(0) saturate(100%);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+  transition: 0.3s ease-in-out
+}
+
+.navbar-toggler-icon:hover {
+  transform: scale(1.2);
+}
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  max-width: 991px;
 }

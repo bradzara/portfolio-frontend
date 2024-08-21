@@ -6,11 +6,11 @@ export function Content() {
   return (
     <section className='home'>
       <div className="home-img">
-        <img src="profile-pic.png" alt="Responsive image" />
+        <img src="profile-pic.png" alt="" />
       </div>
 
       <div className='home-content'>
-        <h1>I&apos;m <span className='span'>Brad</span></h1>
+        <h1>Hi, It&apos;s <span className='span'>Brad</span></h1>
         <h3>
           I&apos;m a <span className='span'>
             <Typewriter

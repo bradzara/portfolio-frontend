@@ -1,4 +1,4 @@
-import { Nav } from "./Nav";
+import { Nav } from "./Navbar";
 import { Content } from "./Content";
 import { Footer } from "./Footer";
 import { About } from "./About";

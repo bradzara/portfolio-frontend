@@ -1,20 +1,19 @@
 section {
-  min-height: 50vh;
-  padding: 5rem 9% 5rem;
+  min-height: 100vh;
+  padding: 10rem 9% 10rem;
 }
 
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: colum;
-  gap: 1rem;
+  gap: 10rem;
 }
 
 .home-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   text-align: center;
   margin-top: 3rem;
@@ -29,7 +28,7 @@ section {
   margin-bottom: 2rem;
   margin-top: 1rem;
   font-size: 3.5rem;
-  color: white;
+  color: var(--text-color);
 }
 
 .home-content h1 {
@@ -37,7 +36,7 @@ section {
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
-  color: white;
+  color: var(--text-color);
 }
 
 .home-img {
@@ -47,8 +46,8 @@ section {
 
 .home-img img {
   position: relative;
-  top: 1rem;
-  width: 22vw;
+  top: 3rem;
+  width: 34vw;
   border-radius: 50%;
   box-shadow: 0 0 25px rgba(156, 15, 15, 0.5);
   cursor: pointer;
@@ -56,8 +55,9 @@ section {
 }
 
 .home-img img:hover {
-  box-shadow: 0 0 50px rgba(181, 8, 8, 0.5),
-    0 0 100px rgba(217, 26, 26, 0.5);
+  box-shadow: 0 0 25px var(--main-color),
+    0 0 50px var(--main-color),
+    0 0 100px var(--main-color);
 }
 
 .home-content p {
@@ -76,7 +76,7 @@ section {
   background: transparent;
   border: 0.2rem solid var(--main-color);
   font-size: 2.5rem;
-  border-radius: 50%;
+  border-radius: 1rem;
   color: var(--main-color);
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.3s ease-in-out;
