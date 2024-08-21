@@ -1,3 +1,5 @@
+import './Footer.css'
+
 export function Footer() {
   return (
     <footer className="footer">
@@ -7,6 +9,24 @@ export function Footer() {
         <a href='https://www.instagram.com/bradzara/' target='blank' rel='noopener noreferrer'><i className='bx bxl-instagram'></i></a>
       </div>
 
+      <ul className="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+
+        <li>
+          <a href="#">About</a>
+        </li>
+
+        <li>
+          <a href="#">Projects</a>
+        </li>
+
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <p className="copyright"><i class='bx bx-copyright' > Brad Zara | All Rights Reserved</i></p>
     </footer>
   )
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// imprt 'react-phone-number-input/style.css';
+import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input/input';
 import './Contact.css';
 
@@ -25,7 +25,7 @@ export function Contact() {
           <input type="text" placeholder='Subject'/>
         </div>
 
-        <textarea name='' id='' cols={30} rows={10} placeholder='Your Message'></textarea>
+        <textarea name='' id='' cols={30} rows={5} placeholder='Your Message'></textarea>
         <input type="submit" value="Send Message" className='btn'/>
       </form>
     </section>
