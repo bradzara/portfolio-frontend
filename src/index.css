@@ -99,6 +99,7 @@ body {
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
     display: none;
+    z-index: 100;
   }
 
   .navbar.active {
