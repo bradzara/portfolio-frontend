@@ -91,7 +91,7 @@ body {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 50%;
+    width: 15%;
     padding: 1rem 3%;
     background-color: rgba(0, 0, 0, 0.9);
     backdrop-filter: blur(20px);
