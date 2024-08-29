@@ -53,6 +53,14 @@ body {
 }
 
 @media(max-width:1285px) {
+  .header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 6vh;
+    backdrop-filter: blur(20px);
+  }
+
   html {
     font-size: 55%;
   }
@@ -65,10 +73,6 @@ body {
 }
 
 @media(max-width:991px) {
-  header {
-    padding: 2rem 3%;
-  }
-
   section {
     padding: 10rem 3% 2rem;
   }
@@ -85,32 +89,6 @@ body {
 @media(max-width:895px) {
   #menu-icon {
     display: block;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 15%;
-    padding: 1rem 3%;
-    background-color: rgba(0, 0, 0, 0.9);
-    backdrop-filter: blur(20px);
-    border-bottom-left-radius: 2rem;
-    border-left: 2px solid var(--main-color);
-    border-bottom: 2px solid var(--main-color);
-    display: none;
-    z-index: 100;
-  }
-
-  .navbar.active {
-    display: block;
-  }
-
-  .navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-    color: white;
   }
 
   .home {
@@ -157,5 +135,15 @@ body {
 
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media(max-width: 400px) {
+  .header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 8vh;
+    backdrop-filter: blur(20px);
   }
 }

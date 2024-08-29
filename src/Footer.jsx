@@ -15,18 +15,18 @@ export function Footer() {
         </li>
 
         <li>
-          <a href="#">About</a>
+          <a href="#about">About</a>
         </li>
 
         <li>
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
 
         <li>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
-      <p className="copyright"><i class='bx bx-copyright' > Brad Zara | All Rights Reserved</i></p>
+      <p className="copyright"><i className='bx bx-copyright' > Brad Zara | All Rights Reserved</i></p>
     </footer>
   )
 }

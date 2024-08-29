@@ -12,7 +12,7 @@ export function Nav() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('section');
-      const scrollPosition = window.scrollY + 200; // Adjust based on your needs
+      const scrollPosition = window.scrollY + 200;
 
       sections.forEach((section) => {
         if (
@@ -32,7 +32,7 @@ export function Nav() {
 
   return (
     <header className="header">
-      <a href="#home"><img className="logo" src="logo.png" alt="Logo" /></a>
+      <a href="#"><img className="logo" src="logo.png" alt="Logo" /></a>
 
       <i 
         className={`bx ${isMenuOpen ? 'bx-x' : 'bx-menu-alt-right'}`} 
