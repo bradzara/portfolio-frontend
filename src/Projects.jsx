@@ -11,13 +11,16 @@ export function Projects () {
         <div id="carouselExample" className="carousel slide">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="TeePartyPic.jpg" className="d-block w-100" alt="..." />
+              <img src="TeePartyHome.png" className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="background.jpg" className="d-block w-100" alt="..." />
+              <img src="TeePartyMatches.png" className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="logo.png" className="d-block w-100" alt="..." />
+              <img src="TeePartyMessage.png" className="d-block w-100" alt="..." />
+            </div>
+            <div className="carousel-item">
+              <img src="TeePartyEditProfile.png" className="d-block w-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -31,7 +34,7 @@ export function Projects () {
         </div>
           <div className="card-body">
             <h5 className="card-title">Tee Party</h5>
-            <p className="card-text">Tee Party app is a social platform designed for golf enthusiasts. It allows users to connect based on shared interests in golf, find and join matches, and engage in conversations with fellow players. The app offers features like user profile matching, real-time messaging, and event coordination, creating a community-driven experience tailored to golfers.</p>
+            <p className="card-text">Tee Party app is a social platform designed for golf enthusiasts. It allows users to connect based on their stats and location. The app offers features like user profile matching and real-time messaging, creating a community-driven experience tailored to golfers. It is built with React.js for the Front End and Ruby on Rails for the back end. </p>
             <div className="d-flex justify-content-center align-items-center">
               <a href="https://github.com/orgs/TeePartyApp/repositories" target='blank' rel='noopener noreferrer'><i className='bx bxl-github'  id='btn-primary'></i></a>
             </div>
