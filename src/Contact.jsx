@@ -11,7 +11,7 @@ export function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    if (!formValidation()) return;
     emailjs
       .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
         publicKey: process.env.REACT_APP_PUBLIC_KEY
@@ -20,6 +20,7 @@ export function Contact() {
         () => {
           console.log('SUCCESS!');
           e.target.reset();
+          alert('Email was successfully sent!');
           setValue('');
         },
         (error) => {
@@ -27,6 +28,19 @@ export function Contact() {
         },
       );
   };
+
+  const formValidation = () => {
+    const current = form.current;
+    let index = 0;
+    while (index < current.length) {
+      console.log(current[index].value, "Line36");
+      if (current[index].value === "") {
+        alert(`${current[index].attributes[1].value.replace("user_","")} cannot be blank.`);
+        return false;
+      }
+      index += 1;
+    }
+  }
   
   return (
     <section className='contact' id='contact'>
