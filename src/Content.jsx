@@ -31,7 +31,7 @@ export function Content() {
             />
           </span>
         </h3>
-
+        
         <p>Javascript | React.JS | Ruby | Ruby on Rails | Python | Django | PostgreSQL | HTML | CSS</p>
 
         <div className='social-icons'>
