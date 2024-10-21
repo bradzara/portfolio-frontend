@@ -11,7 +11,6 @@ export function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (!formValidation()) return;
     emailjs
       .sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
         publicKey: process.env.REACT_APP_PUBLIC_KEY
@@ -28,19 +27,6 @@ export function Contact() {
         },
       );
   };
-
-  const formValidation = () => {
-    const current = form.current;
-    let index = 0;
-    while (index < current.length) {
-      console.log(current[index].value, "Line36");
-      if (current[index].value === "") {
-        alert(`${current[index].attributes[1].value.replace("user_","")} cannot be blank.`);
-        return false;
-      }
-      index += 1;
-    }
-  }
   
   return (
     <section className='contact' id='contact'>
@@ -48,8 +34,8 @@ export function Contact() {
 
       <form ref={form} onSubmit={sendEmail}>
         <div className='input-box'>
-          <input type='text' name='user_name' placeholder='Full Name' />
-          <input type='email' name='user_email' placeholder='Email' />
+          <input type='text' name='user_name' placeholder='Full Name' required/>
+          <input type='email' name='user_email' placeholder='Email' required/>
         </div>
 
         <div className='input-box'>
@@ -58,12 +44,12 @@ export function Contact() {
             defaultCountry='US'
             placeholder="Phone Number"
             value={value}
-            onChange={setValue}/>
-          <input type="text" name='subject' placeholder='Subject'/>
+            onChange={setValue} required/>
+          <input type="text" name='subject' placeholder='Subject'required/>
         </div>
 
-        <textarea name='message' id='' cols={30} rows={5} placeholder='Your Message'></textarea>
-        <input type="submit" value="Send" className='btn'/>
+        <textarea name='message' id='' cols={30} rows={5} placeholder='Your Message' required></textarea>
+        <input type="submit" value="Send" className='btn'required/>
       </form>
     </section>
   )
